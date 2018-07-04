@@ -9,16 +9,6 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r InitTableAbbrev, echo=FALSE, results='hide'}
-r6roTabAbbr <- rmddochelper::R6ClassTableAbbrev$new()
-r6roTabAbbr$setColHeader(c("Abkürzung", "Bedeutung"))
-# r6roTabAbbr$add_abbrev(psAbbrev = "QAG", psMeaning = "Qualitas AG", pbOut = FALSE)
-# r6roTabAbbr$add_abbrev(psAbbrev = "MAG", psMeaning = "Mitarbeitergespräch", pbOut = FALSE)
-# r6roTabAbbr$add_abbrev(psAbbrev = "ZWS", psMeaning = "Zuchtwertschätzung", pbOut = FALSE)
-# r6roTabAbbr$add_abbrev(psAbbrev = "FA-ASR", psMeaning = "Forschungsausschuss der ASR", pbOut = FALSE)
-# r6roTabAbbr$add_abbrev(psAbbrev = "ASR", psMeaning = "Arbeitsgemeinschaft Schweizerischer Rinderzüchter", pbOut = FALSE)
-```
-
 
 __Datum__: `r format(Sys.Date(), "%d.%m.%Y")`
 
@@ -31,7 +21,7 @@ __Anwesende__:
 * Urs Schnyder (USC), Leitung
 * Beat Bapst (BBA)
 * Madeleine Berweger (MBE)
-* Mirjam Frischknecht (MFR)
+* Mirjam Spengeler (MSP)
 * Sophie Kunz (SKU)
 * Urs Schuler (USU)
 * Franz Seefried (FSE)
@@ -39,60 +29,58 @@ __Anwesende__:
 * Peter von Rohr (PVR)
 
 
-## Info aus GL/VR
+# Info aus GL/VR
 
 
-## Stand der Routine
+# Stand der Routine
 
 
-## Pendenzen aus der Routine
+# Pendenzen aus der Routine
 
 
-## ITB-Testlauf 
+# ITB-Testlauf 
 
 
-## Routine VMS (SKN)
+# Routine VMS (SKN)
 
 
-## Routine KWK (BBA)
+# Routine KWK (BBA)
 
 
-## Projekte
-### Aceton
+# Projekte
+## MethaGENE Plus
 
-### Aufzuchtverluste
+## 2orgCows
 
-### ZWS Gesundheitsdaten
+## Aceton
 
-### LBE Grösse
+## Aufzuchtverluste
 
-### Deregression von ITB-ZW
+## ZWS Gesundheitsdaten
 
-### ZWS Frühreife/Fettklasse
+## LBE Grösse
 
-### ZWS JE
+## Deregression von ITB-ZW
 
-### Ejakulatqualität
+## ZWS Frühreife/Fettklasse
 
-### Routine QS/Automatisierung
+## ZWS JE
 
-### Ketose
+## Ejakulatqualität
 
-### Sequenzierung HOL-Stiere
+## Routine QS/Automatisierung
 
-### Genetic Monitoring
+## Ketose
+
+## Sequenzierung HOL-Stiere
+
+## Genetic Monitoring
+
+## Single Step
 
 
-## Weitere Infos
+# Weitere Infos
 
 * Nächste Teamsitzung: 
 
-
-\pagebreak
-
-```{r TableAbbrev, eval=TRUE, echo=FALSE, results='asis'}
-r6roTabAbbr$writeToTsvFile()
-if (!r6roTabAbbr$is_empty_abbr())
-  r6roTabAbbr$include_abbr_table(psAbbrTitle = "### Abkürzungen")
-```
 
